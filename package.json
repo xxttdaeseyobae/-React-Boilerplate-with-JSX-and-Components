@@ -1,36 +1,25 @@
 {
-  "name": "-React-Boilerplate-with-JSX-and-Components",
+  "name": "travelnepalapi",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "npx webpack --mode development --config webpack.config.js && npx webpack-dev-server --hot --liveReload false",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/xxttdaeseyobae/-React-Boilerplate-with-JSX-and-Components.git"
-  },
-  "keywords": [],
-  "author": "",
+  "author": "Bikal Shrestha",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/xxttdaeseyobae/-React-Boilerplate-with-JSX-and-Components/issues"
-  },
-  "homepage": "https://github.com/xxttdaeseyobae/-React-Boilerplate-with-JSX-and-Components#readme",
   "dependencies": {
-    "@babel/cli": "^7.7.7",
-    "@babel/core": "^7.7.7",
-    "@babel/preset-env": "^7.7.7",
-    "@babel/preset-react": "^7.7.4",
-    "babel-loader": "^8.0.6",
-    "react": "^16.12.0",
-    "react-dom": "^16.12.0",
-    "webpack": "^4.41.5",
-    "webpack-cli": "^3.3.10",
-    "webpack-dev-server": "^3.10.1"
-  },
-  "devDependencies": {
-    "@babel/plugin-transform-arrow-functions": "^7.7.4"
+    "bcrypt": "^3.0.6",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "jest": "^24.8.0",
+    "jsonwebtoken": "^8.5.1",
+    "module": "^1.2.5",
+    "mongoose": "^5.5.12",
+    "multer": "^1.4.1",
+    "node-pre-gyp": "^0.13.0",
+    "nodemon": "^1.19.4"
   }
 }
