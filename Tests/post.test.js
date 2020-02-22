@@ -10,27 +10,27 @@ beforeAll(async() => {
 afterAll(async() => {
     await mongoose.connection.close();
 });
-describe(' Testing of Contact Schema', () => {
-    it(' Testing of Adding Contact', () => {
+describe(' Testing of Feedback Schema', () => {
+    it(' Testing of Adding Item Contact', () => {
         const post = {
-            'title': 'Moutain View',
-            'location': 'Nagarkot',
-            'description': 'such a beautiful place to visit'
+            'title': 'oldman',
+            'location': 'golfutar',
+            'description': 'oldman in his 90s lost his way'
         };
 
         return Post.create(post)
             .then((post) => {
-                expect(post.title).toEqual('Moutain View');
+                expect(post.title).toEqual('Person');
             });
     });
 });
-it('Testing of Contact Deletion', async() => {
+it('Testing of Feedback Deletion', async() => {
     const status = await Post.deleteOne({ "_id": "5d231225d4570230aeca1215" });
     expect(status.ok).toBe(1);
 });
-it('Testing of Updating Contact', async() => {
-    return Post.findOneAndUpdate({ "_id": "5d22bbe4f6fb3008ceffeecd" }, { $set: { title: 'Hill View' } })
+it('Testing of Updating Feedback', async() => {
+    return Post.findOneAndUpdate({ "_id": "5d22bbe4f6fb3008ceffeecd" }, { $set: { title: 'oldman' } })
         .then((p) => {
-            expect(p.title).toEqual('Hill View')
+            expect(p.title).toEqual('Oldman')
         })
 });

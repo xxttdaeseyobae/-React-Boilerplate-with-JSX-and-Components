@@ -13,14 +13,14 @@ afterAll(async() => {
 describe(' Testing of Contact Schema', () => {
     it(' Testing of Adding Contact', () => {
         const contact = {
-            'fname': 'Bikal',
-            'lname': 'Shrestha',
-            'email': 'bikal3@gmail.com'
+            'fname': 'Manisha',
+            'lname': 'Kc',
+            'email': 'manisha@mail.com'
         };
 
         return Contact.create(contact)
             .then((contact) => {
-                expect(contact.email).toEqual('bikal3@gmail.com');
+                expect(contact.email).toEqual('manisha@gmail.com');
             });
     });
 });

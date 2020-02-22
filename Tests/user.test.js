@@ -13,14 +13,14 @@ afterAll(async() => {
 describe(' Testing of User Schema', () => {
     it(' Testing of Adding User', () => {
         const user = {
-            'name': 'Bikal Shrestha',
-            'email': 'bikal3.bs@gmail.com',
-            'password': 'bikal'
+            'name': 'Manisha KC',
+            'email': 'manisha@gmail.com',
+            'password': 'manisha'
         };
 
         return User.create(user)
             .then((user) => {
-                expect(user.email).toEqual('bikal3.bs@gmail.com');
+                expect(user.email).toEqual('manisha@gmail.com');
             });
     });
 });

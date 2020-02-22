@@ -14,7 +14,7 @@ var storage = multer.diskStorage({
     destination: "images",
     filename: function(req, file, callback) {
         const ext = path.extname(file.originalname);
-        callback(null, "bikal" + Date.now() + ext);
+        callback(null, "manisha" + Date.now() + ext);
     }
 
 });

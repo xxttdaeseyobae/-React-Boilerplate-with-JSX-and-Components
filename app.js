@@ -16,7 +16,7 @@ app.use(express.static("./images"));
 // app.use(cors);
 
 app.get("/", function(req, res) {
-    res.send("Travel Nepal Ai");
+    res.send("Lost and found");
 })
 var corsOptions = {
     "origin": "*",
